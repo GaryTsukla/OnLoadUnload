@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "OnLoad Unload Tabs",
+	"short_name": "Onload Unload",
+	"version": "0.0.1",
+  
+	"description": "When you open chrome, and it restores all your tabs, this extension unloads all tabs except the active tab",
+	"homepage_url": "https://garyc.dev",
+	"icons": {
+		"32": "icons/unload32.png",
+		"48": "icons/unload48.png",
+		"96": "icons/unload96.png",
+		"128": "icons/unload128.png"
+	},
+	"permissions": [
+		"tabs",
+		"contextMenus"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"minimum_chrome_version": "89"
+}
